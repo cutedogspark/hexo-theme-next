@@ -252,9 +252,12 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
+  separated_meta: true  # false 時只會顯示單行
+  item_text_post: true  # 若為 false 只會顯示圖標和數字，不會顯示所需閱讀時間&文章字數
+  item_text_total: true # footer 是否顯示 總字數文字與閱讀時間的文字
+  ## 以下我沒調整過，依照預設即可。
+  awl: 4 # 計算字數
+  wpm: 275 # 一分鐘閱讀的字數
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
